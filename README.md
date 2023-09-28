@@ -18,7 +18,7 @@ streams](https://redis.io/topics/streams-intro).
   dies while processing, the message it was working on isn't lost. This
   guarantees at least once delivery.
 - A "visibility timeout" so that if a message isn't processed in a designated
-  time frame, it will be be processed by another consumer.
+  time frame, it will be processed by another consumer.
 - A max length on the stream so that it doesn't store the messages indefinitely
   and run out of memory.
 - Graceful handling of Unix signals (`SIGINT` and `SIGTERM`) to let in-flight
